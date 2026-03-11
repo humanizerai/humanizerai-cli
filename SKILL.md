@@ -1,11 +1,17 @@
 ---
 name: humanizerai
 description: HumanizerAI CLI for detecting and humanizing AI-generated text. Bypass GPTZero, Turnitin, Originality.ai, Copyleaks, and other AI detectors. Detect AI content and transform it into natural human writing.
+user-invocable: false
+allowed-tools: Bash(humanizerai:*)
 homepage: https://humanizerai.com
 metadata: {"clawdbot":{"emoji":"✍️","requires":{"bins":[],"env":["HUMANIZERAI_API_KEY"]}}}
 ---
 
-## Install HumanizerAI CLI
+# HumanizerAI CLI
+
+AI text detection and humanization from the command line. Detect AI patterns and rewrite text to bypass GPTZero, Turnitin, Originality.ai, and other detectors.
+
+## Install
 
 ```bash
 npm install -g humanizerai
@@ -14,14 +20,6 @@ npm install -g humanizerai
 npm release: https://www.npmjs.com/package/humanizerai
 official website: https://humanizerai.com
 API docs: https://humanizerai.com/docs/api
-
----
-
-| Property | Value |
-|----------|-------|
-| **name** | humanizerai |
-| **description** | CLI for detecting and humanizing AI-generated text |
-| **allowed-tools** | Bash(humanizerai:*) |
 
 ---
 
