@@ -1,0 +1,57 @@
+{
+  "name": "humanizerai",
+  "version": "1.0.0",
+  "description": "CLI for HumanizerAI - Detect and humanize AI-generated text from the command line",
+  "main": "dist/index.js",
+  "bin": {
+    "humanizerai": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "start": "node ./dist/index.js",
+    "prepublishOnly": "npx tsup"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "SKILL.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "humanize",
+    "ai-detection",
+    "ai-detector",
+    "gptzero",
+    "turnitin",
+    "originality",
+    "cli",
+    "ai-agent",
+    "command-line",
+    "humanizer",
+    "ai-text",
+    "bypass-ai-detection"
+  ],
+  "author": "HumanizerAI <support@humanizerai.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/humanizerai/cli.git"
+  },
+  "homepage": "https://humanizerai.com",
+  "bugs": {
+    "url": "https://github.com/humanizerai/cli/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/yargs": "^17.0.32",
+    "tsup": "^8.5.1",
+    "typescript": "^5.3.3"
+  }
+}
