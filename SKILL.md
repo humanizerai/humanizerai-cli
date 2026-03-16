@@ -11,6 +11,7 @@ metadata:
     requires:
       env:
         - HUMANIZERAI_API_KEY
+        - HUMANIZERAI_API_URL
       bins:
         - humanizerai
     primaryEnv: HUMANIZERAI_API_KEY
