@@ -1,7 +1,7 @@
 ---
 name: humanizerai
 description: Humanizer AI CLI. Detect AI-generated text and humanize it to bypass GPTZero, Turnitin, Originality.ai, Copyleaks, ZeroGPT, and Winston AI. Rewrite AI content into natural human writing. Free unlimited AI detection with score 0-100. Three humanization intensities (light, medium, aggressive). Works with ChatGPT, Claude, Gemini, and all LLM output.
-version: 1.0.0
+version: 1.0.1
 user-invocable: false
 allowed-tools: Bash(humanizerai:*)
 homepage: https://humanizerai.com
