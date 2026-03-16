@@ -1,13 +1,26 @@
 ---
 name: humanizerai
-description: HumanizerAI CLI for detecting and humanizing AI-generated text. Bypass GPTZero, Turnitin, Originality.ai, Copyleaks, and other AI detectors. Detect AI content and transform it into natural human writing.
+description: Humanizer AI CLI. Detect AI-generated text and humanize it to bypass GPTZero, Turnitin, Originality.ai, Copyleaks, ZeroGPT, and Winston AI. Rewrite AI content into natural human writing. Free unlimited AI detection with score 0-100. Three humanization intensities (light, medium, aggressive). Works with ChatGPT, Claude, Gemini, and all LLM output.
+version: 1.0.0
 user-invocable: false
 allowed-tools: Bash(humanizerai:*)
 homepage: https://humanizerai.com
-metadata: {"clawdbot":{"emoji":"✍️","requires":{"bins":[],"env":["HUMANIZERAI_API_KEY"]}}}
+metadata:
+  openclaw:
+    emoji: "✍️"
+    requires:
+      env:
+        - HUMANIZERAI_API_KEY
+      bins:
+        - humanizerai
+    primaryEnv: HUMANIZERAI_API_KEY
+    install:
+      - kind: node
+        package: humanizerai
+        bins: [humanizerai]
 ---
 
-# HumanizerAI CLI
+# Humanizer AI CLI
 
 AI text detection and humanization from the command line. Detect AI patterns and rewrite text to bypass GPTZero, Turnitin, Originality.ai, and other detectors.
 
